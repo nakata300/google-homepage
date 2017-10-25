@@ -1,6 +1,170 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
 
+	
+
+
+#container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
 
 #topNav {
-	height: 60px;
+	height: 45px;
+/*	float: right; */
+	padding: 8px 15px;
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.firstLink {
+	margin-right: auto;
+}
+
+.firstLink,
+.topLink {
+	margin-right: 8px;
+}
+
+/* style the Sign In box */
+#sign {
+	background-color: #2a7fff;
+	color: white;
+	padding: 8px 15px;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: #575757;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-size: .85em;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#centre {
+	width: 100%;
+
+}
+
+/*
+#centre {
+	width: 800px;
+}
+*/
+#logo {
+	margin: 25px 0 10px 410px;
+	padding-top: 75px;
+}
+
+/* Media queries to reposition logo as price of screen changes */
+@media (max-width: 1050px) {
+	#logo {
+		margin-left: 200px;
+	}
+}
+
+@media (max-width: 575px) {
+	#logo {
+		margin-left: 25px;
+	}
+}
+
+
+
+#searchBox {
+/*	margin: 100px 0 0 350px; */
+/*	clear: both; */
+	margin-left: 385px;
+	width: 550px;
+	height: 2.5em;
+	font-size: .9em;
+	-webkit-box-shadow: 1px 3px 1px #afafe9;
+	-moz-box-shadow: 1px 3px 1px #afafe9;
+	box-shadow: 1px 3px 1px #afafe9;
+	background-color: white;
+	border: 1px solid #afafe9;
+}
+
+/* media queries to reposition and resize search box */
+@media (max-width: 1050px) {
+	#searchBox {
+		margin-left: 200px;
+	}
+}
+
+@media (max-width: 575px) {
+	#searchBox {
+		width: 350px;
+		height: 1.75em;
+		margin-left: 100px;
+	}
+}
+
+.ctrButt {
+	padding: 10px 20px;
+	border: none;
+	margin-top: 25px;
+	font-family: Roboto, Helvetica, sans-serif;
+	font-weight: 600;
+	background-color: #f0f1f2;
+	color: #6f7c91;
+	border-radius: 1px;
+}
+
+.ctrButt:hover {
+	border: 1px solid #c7c7c7;
+	color: #303030;
+}
+
+.search {
+	margin-left: 515px;
+}
+
+/* media queries to reposition the buttons as the screen
+becomes thinner */
+@media (max-width: 1050px) {
+	.search {
+		margin-left: 300px;
+	}
+}
+
+@media (max-width: 575px) {
+	.search {
+		margin-left: 125px;
+	}
+}
+
+
+footer {
+	background-color: #f0f1f2;
+	height: 42px;
+	bottom: 0px;
+	width: 100%;
+	position: fixed;
+}
+
+.footButt {
+	background-color: #f0f1f2;
+	border: none;
+	height: 42px;
+	font-weight: 400;
+	color: #5e5e5e;
+	margin: 0 10px;
+}
+
+.footButtRight {
 	float: right;
 }
+
+.footButt:hover {
+	text-decoration: underline;
+}
+
